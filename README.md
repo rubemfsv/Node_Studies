@@ -1,4 +1,4 @@
-# Node_Studies
+# Server-side Development with NodeJS, Express and MongoDB
 
 Respository for the Server-side Development with NodeJS, Express and MongoDB Course by The University of Hong Kong.
 
