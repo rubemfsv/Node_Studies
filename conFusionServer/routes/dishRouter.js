@@ -182,9 +182,9 @@ dishRouter.route('/:dishId/comments/:commentId')
     .put(authenticate.verifyUser, (req, res, next) => {
         Dishes.findById(req.params.dishId)
             .then((dish) => {
-                var thisComment = dish.comments.id(req.params.commentId);  // Verify whether the user is the author of the comment
+                var thisComment = dish.comments.id(req.params.commentId); 
 
-                if (!thisComment.author._id.equals(req.user._id)) {  // if(true)
+                if (!thisComment.author._id.equals(req.user._id)) {
                     console.log(req.user._id);
                     var err = new Error('You are not the author of this comment');
                     err.status = 403;
